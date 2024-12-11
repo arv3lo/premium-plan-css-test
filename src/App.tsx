@@ -1,7 +1,7 @@
-import { MENU_ITEMS } from '@/common/constants'
-import MenuItem from '@/components/Sidebar/MenuItem'
-import PremiumLogo from '@/assets/icons/Logo.svg'
-import Resumizeme from '@/assets/icons/Resumizeme.svg'
+import Header from '@/components/Sidebar/Header'
+import Menu from '@/components/Sidebar/Menu'
+import Footer from '@/components/Sidebar/Footer'
+import MainContent from '@/components/Content'
 
 import './App.css'
 
@@ -12,21 +12,11 @@ function App() {
     <>
       <div className='main'>
         <div className='sidebar'>
-          <div className='header'>
-            <img src={PremiumLogo} height="100%" alt="premium logo" />
-            <img src={Resumizeme} height="100%" alt="premium logo" />
-          </div>
-          <div className='menus'>
-            {MENU_ITEMS.map((item, index) => (
-              <MenuItem icon={item.icon} label={item.label} key={`${index}-${item.label.toLowerCase()}`} />
-            ))}
-          </div>
-          <div className='footer'>footer</div>
+          <Header />
+          <Menu />
+          <Footer />
         </div>
-        <div className='content'>
-          main content
-        </div>
-
+        <MainContent />
       </div>
     </>
   )
