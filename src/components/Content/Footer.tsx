@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer flex-row'>
             <p className='footer-text'>Terms & Conditions</p>
             <p className='footer-text'>Privacy Policy</p>
             <p className='footer-text'>FAQ</p>

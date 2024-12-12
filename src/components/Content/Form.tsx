@@ -8,14 +8,14 @@ const Form = () => {
     const handleSubmit = () => {
         // ...
     }
-    
+
     return (
         <>
             <h2 className='info-title custom-font-text'>
                 Personal Information
             </h2>
-            <div className='info-forms'>
-                <div className='form'>
+            <div className='info-forms flex-row'>
+                <div className='form flex-col'>
                     <div className='input-line'>
                         <CustomInput label="Firstname" value="Petter" name="firstname" />
                         <CustomInput label="Lastname" value="Cetera" name="lastname" />
@@ -31,8 +31,8 @@ const Form = () => {
                         <CustomInput label="Email" value="petter@gmail.com" name="email" icon={CheckIcon} />
                         <CustomInput label="Phone" value="+442223334444" name="phone" />
                     </div>
-                    <div className='input-line'>
-                        <CustomInput label="Password" value="" name="password" />
+                    <div className='input-line half-width'>
+                        <CustomInput label="Password" value="" name="password" type="password" />
                     </div>
                     <div className='input-line'>
                         <p className='email-note custom-font-text'>Use this email to log in to your <a href="#" className='external-link'>resumedone.io</a> account and receive notifications.</p>

@@ -3,22 +3,26 @@
   max-height: 100%;
 }
 
-.main {
+.flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.main {
   height: 100%;
 }
 
-.sidebar {
+.flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.sidebar {
   justify-content: space-between;
   border-right: solid 1px #ececed;
 }
 
 .top-sidebar {
-  display: flex;
-  flex-direction: column;
   background-color: white;
   width: 18rem;
 }
@@ -60,8 +64,6 @@
 }
 
 .menuItem {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 0.5rem;
 }
@@ -80,6 +82,16 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  position: relative;
+}
+
+.customInput label {
+  position: absolute;
+  top: -10px;
+  padding: 0 5px;
+  background-color: #fff;
+  color: #595964;
+  font-size: 14px;
 }
 
 .customInput > input,
@@ -138,14 +150,10 @@
 }
 
 .main-content {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
   background-color: #fff;
   padding: 1rem;
   gap: 0.5rem;
@@ -153,19 +161,12 @@
 }
 
 .banner {
-  display: flex;
-  flex-direction: row;
   gap: 1rem;
   align-items: center;
   justify-content: center;
   background-color: #008b5d;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
-}
-
-.banner-content {
-  display: flex;
-  flex-direction: column;
 }
 
 .banner-title {
@@ -180,8 +181,6 @@
 }
 
 .personal-infos {
-  display: flex;
-  flex-direction: column;
   gap: 1.2rem;
 }
 
@@ -191,8 +190,6 @@
 }
 
 .info-forms {
-  display: flex;
-  flex-direction: row;
   gap: 1rem;
   justify-content: space-between;
 }
@@ -200,13 +197,15 @@
 .form {
   width: 100%;
   gap: 1.5rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .input-line {
   display: flex;
   gap: 1.5rem;
+}
+
+.half-width {
+  width: 49%;
 }
 
 .email-note {
@@ -229,7 +228,7 @@
 
 .profile-pic {
   border-radius: 50%;
-  width: 12rem;
+  width: 17rem;
 }
 
 .custom-checkbox {
@@ -241,8 +240,6 @@
 }
 
 .actions {
-  display: flex;
-  flex-direction: column;
   gap: 1.7rem;
 }
 
@@ -253,15 +250,13 @@
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   gap: 1rem;
   padding: 0 6rem;
 }
 
 .footer-text {
-  font-family: "Gilroy-Regular","Segoe UI", Tahoma;
+  font-family: "Gilroy-Regular", "Segoe UI", Tahoma;
   font-size: 16px;
   line-height: 22px;
   text-align: left;

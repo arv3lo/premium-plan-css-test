@@ -4,8 +4,8 @@ import AccountMenu from '@/components/Sidebar/AccountMenu'
 
 const Sidebar = () => {
     return ( 
-        <div className='sidebar'>
-          <div className='top-sidebar'>
+        <div className='sidebar flex-col'>
+          <div className='top-sidebar  flex-col'>
             <Header />
             <Menu />
           </div>

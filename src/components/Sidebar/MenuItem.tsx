@@ -14,7 +14,7 @@ const MenuItem = ({ label, icon }: TMenuItemProps) => {
         }
     }
     return (
-        <div className="menuItem custom-font-text">
+        <div className="menuItem custom-font-text flex-row">
             {renderIcon(icon)}
             <p className="menuItemLabel">{label}</p>
         </div>

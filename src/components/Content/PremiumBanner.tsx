@@ -2,9 +2,9 @@ import Premium from '@/assets/icons/Premium.svg'
 
 const PremiumBanner = () => {
     return (
-        <div className='banner'>
+        <div className='banner flex-row'>
             <img src={Premium} alt="premium banner icon" width="8%" />
-            <div className='banner-content'>
+            <div className='banner-content flex-col'>
                 <h3 className='banner-title custom-font-text'>Premium account</h3>
                 <p className='banner-subtitle custom-font-text'>
                     You have a premium account, granting you access to all the remarkable features offered by ResumeDone.

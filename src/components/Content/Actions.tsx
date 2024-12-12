@@ -6,7 +6,7 @@ const Actions = () => {
     }
     return (
         <>
-            <div className='actions'>
+            <div className='actions flex-col'>
                 <div className='input-line'>
                     <input type="checkbox" className='custom-checkbox' />
                     <p className='email-note custom-font-text'>

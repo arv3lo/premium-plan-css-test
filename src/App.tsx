@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <div className='main'>        
+      <div className='main flex-row'>        
         <Sidebar />
         <MainContent />
       </div>

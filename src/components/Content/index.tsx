@@ -6,10 +6,10 @@ import Footer from './Footer';
 const MainContent = () => {
 
     return (
-        <div className='main-content'>
-            <div className='content'>
+        <div className='main-content flex-col'>
+            <div className='content flex-col'>
                 <PremiumBanner />
-                <div className='personal-infos'>
+                <div className='personal-infos  flex-col'>
                     <Form />
                     <Actions />
                 </div>
