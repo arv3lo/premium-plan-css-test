@@ -1,50 +1,58 @@
 #root {
   max-width: 100%;
   max-height: 100%;
-  /* margin: 0 auto; */
-
-  /* text-align: center; */
 }
 
 .main {
   display: flex;
   flex-direction: row;
-  background-color: beige;
   height: 100%;
-  padding: 0.5rem;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  border-right: solid 1px #ececed;
+}
+
+.top-sidebar {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  width: 300px;
+  width: 18rem;
 }
 
 .header {
   border-bottom: solid 1px #ececed;
 }
 
-.footer {
+.account-menu {
+  display: flex;
   border-top: solid 1px #ececed;
 }
 
-.header,
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 0.5rem;
-  padding: 1rem;
-  border-bottom: solid 1px #ececed;
+.setting-icon {
+  padding: 0 0.5rem;
 }
 
-.content {
+.account-info {
   display: flex;
-  flex-direction: column;
-  background-color: aliceblue;
-  padding: 1rem;
+  align-items: center;
   gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.account-pic {
+  border-radius: 50%;
 }
 
 .menus {
@@ -55,7 +63,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   gap: 0.5rem;
 }
 
@@ -87,7 +94,7 @@
   outline: none;
 }
 
-.customButton {
+.filled-button {
   padding: 0.7rem;
   font-size: medium;
   display: flex;
@@ -102,10 +109,166 @@
   width: 100%;
 }
 
-.customButton:hover {
+.filled-button:hover {
   background-color: #53bedf;
 }
 
-.customButton:active {
+.filled-button:active {
   background-color: #6cafc4;
+}
+
+.link-button {
+  padding: 0.7rem 0;
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  color: #f25773;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  color: #db4b65;
+}
+
+.link-button:active {
+  color: #ff748d;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  gap: 0.5rem;
+  padding: 2rem 6rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #008b5d;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-title {
+  font-size: 24px;
+  color: #fff;
+  margin: 0.4rem 0;
+}
+
+.banner-subtitle {
+  font-size: 16px;
+  color: #fff;
+}
+
+.personal-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.info-title {
+  font-size: 24px;
+  color: #000;
+}
+
+.info-forms {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.form {
+  width: 100%;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-line {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.email-note {
+  margin: 0;
+}
+
+.external-link {
+  text-decoration: none;
+  color: #1688fe;
+}
+
+.action-button {
+  width: 12rem;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 12rem;
+}
+
+.custom-checkbox {
+  color: #ececed;
+}
+
+.custom-font-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.delete-banner {
+  border: solid 1px #ececed;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0 6rem;
+}
+
+.footer-text {
+  font-family: "Gilroy-Regular","Segoe UI", Tahoma;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: #595964;
+  cursor: pointer;
+}
+
+.footer-text:hover {
+  text-decoration: underline;
 }
